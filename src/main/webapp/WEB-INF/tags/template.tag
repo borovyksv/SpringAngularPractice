@@ -9,7 +9,7 @@
     <title><jsp:invoke fragment="title"/></title>
 
     <!-- Bootstrap Core CSS -->
-    <spring:url value="resources/css/bootstrap.css" var="bootstrap"/>
+    <spring:url value="/resources/css/bootstrap.css" var="bootstrap"/>
     <link href="${bootstrap}" rel="stylesheet" />
 
     <!-- Custom CSS -->
@@ -58,16 +58,7 @@
                             <a href="${file}">Загрузка файла PDF и Excel</a>
                         </li>
                         <li>
-                            <a href="portfolio-2-col.html">Lesson 2</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-3-col.html">Lesson 3</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-4-col.html">Lesson 5</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-item.html">Lesson 5</a>
+                            <a href="${jdbc}">JDBC c JDBCTemplates</a>
                         </li>
                     </ul>
                 </li>
@@ -87,7 +78,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright © Your Website 2014</p>
+                <p>Copyright © BorovykSV 2017</p>
             </div>
         </div>
     </footer>

@@ -25,6 +25,10 @@
           <element id="library" level="project" name="Maven: com.lowagie:itext:2.1.5" />
           <element id="library" level="project" name="Maven: bouncycastle:bcmail-jdk14:138" />
           <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk14:138" />
+          <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.3.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.13" />
         </element>
       </element>
     </root>
