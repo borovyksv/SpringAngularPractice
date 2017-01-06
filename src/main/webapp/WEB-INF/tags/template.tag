@@ -4,7 +4,7 @@
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <%@attribute name="title" fragment="true" %>
-
+<html>
 <head>
     <title><jsp:invoke fragment="title"/></title>
 
@@ -17,7 +17,7 @@
     <link href="${startertemplate}" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <spring:url value="/resources/css/font-awesome.min.css" var="fontawesome"/>
+    <spring:url value="/resources/font-awesome/css/font-awesome.min.css" var="fontawesome"/>
     <link href="${fontawesome}" rel="stylesheet" />
 
     <!-- jQuery -->
@@ -27,7 +27,6 @@
     <!-- Bootstrap Core JavaScript -->
     <spring:url value="/resources/js/bootstrap.min.js" var="js"/>
     <script src="${js}"></script>
-
 </head>
 
 <body>
@@ -57,8 +56,13 @@
                         <li>
                             <a href="${file}">Загрузка файла PDF и Excel</a>
                         </li>
+                        <c:url value="/jdbc.html" var="jdbc"/>
                         <li>
                             <a href="${jdbc}">JDBC c JDBCTemplates</a>
+                        </li>
+                        <c:url value="/email.html" var="email" />
+                        <li>
+                            <a href="${email}">Работа с Java Mail API</a>
                         </li>
                     </ul>
                 </li>
@@ -78,7 +82,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright © BorovykSV 2017</p>
+                <p>Copyright © Javastudy.ru 2016</p>
             </div>
         </div>
     </footer>
@@ -86,4 +90,4 @@
 
 </body>
 
-</html> 
+</html>
