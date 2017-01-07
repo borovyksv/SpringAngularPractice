@@ -27,6 +27,12 @@
         <logback.version>1.0.13</logback.version>
         <slf4j.version>1.7.13</slf4j.version>
 
+        <hibernate.version>5.0.1.Final</hibernate.version>
+
+
+        <!-- Spring Data -->
+        <spring-framework.data.version>1.9.1.RELEASE</spring-framework.data.version>
+
     </properties>
 
     <dependencyManagement>
@@ -158,6 +164,34 @@
             <version>1.7</version>
         </dependency>
         <!--TODO version 4, ENDS-->
+
+
+
+        <!--TODO version 5-->
+        <!-- Hibernate / JPA -->
+
+
+        <!--Hibernate ORM-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <!--Hibernate validator (contains @NotEmpty)-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.1.0.Final</version>
+        </dependency>
+
+        <!--Spring Data-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-framework.data.version}</version>
+        </dependency>
+        <!--TODO version 5, ENDS-->
 
     </dependencies>
     <!--http://startbootstrap.com/template-overviews/modern-business/  this is theme-->

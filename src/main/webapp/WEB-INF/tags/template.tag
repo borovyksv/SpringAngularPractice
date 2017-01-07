@@ -64,6 +64,15 @@
                         <li>
                             <a href="${email}">Работа с Java Mail API</a>
                         </li>
+                        <c:url value="/rest.html" var="rest" />
+                        <li>
+                            <a href="${rest}">Rest</a>
+                        </li>
+                        <c:url value="/orm.html" var="orm" />
+                        <li>
+                            <a href="${orm}">ORM</a>
+                        </li>
+
                     </ul>
                 </li>
             </ul>
