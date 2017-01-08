@@ -31,6 +31,13 @@
 
 <body>
 
+<c:url value="/file.html" var="file"/>
+<c:url value="/jdbc.html" var="jdbc"/>
+<c:url value="/email.html" var="email" />
+<c:url value="/rest.html" var="rest" />
+<c:url value="/orm.html" var="orm" />
+<c:url value="/runtimeException.html" var="runtimeException" />
+
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -52,27 +59,24 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <c:url value="/file.html" var="file"/>
                         <li>
                             <a href="${file}">Загрузка файла PDF и Excel</a>
                         </li>
-                        <c:url value="/jdbc.html" var="jdbc"/>
                         <li>
                             <a href="${jdbc}">JDBC c JDBCTemplates</a>
                         </li>
-                        <c:url value="/email.html" var="email" />
                         <li>
                             <a href="${email}">Работа с Java Mail API</a>
                         </li>
-                        <c:url value="/rest.html" var="rest" />
                         <li>
-                            <a href="${rest}">Rest</a>
+                            <a href="${rest}">Rest Services</a>
                         </li>
-                        <c:url value="/orm.html" var="orm" />
                         <li>
-                            <a href="${orm}">ORM</a>
+                            <a href="${orm}">Spring MVC и Hibernate 5</a>
                         </li>
-
+                        <li>
+                            <a href="${runtimeException}">Runtime Exception</a>
+                        </li>
                     </ul>
                 </li>
             </ul>

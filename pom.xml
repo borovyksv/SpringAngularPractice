@@ -27,11 +27,16 @@
         <logback.version>1.0.13</logback.version>
         <slf4j.version>1.7.13</slf4j.version>
 
+        <!-- jackson json JSON Processing API -->
+        <jackson.databind-version>2.2.3</jackson.databind-version>
+
+        <!-- Hibernate / JPA -->
         <hibernate.version>5.0.1.Final</hibernate.version>
 
 
         <!-- Spring Data -->
         <spring-framework.data.version>1.9.1.RELEASE</spring-framework.data.version>
+
 
     </properties>
 
@@ -165,6 +170,12 @@
         </dependency>
         <!--TODO version 4, ENDS-->
 
+        <!-- Spring REST jackson JSON Processing API -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.databind-version}</version>
+        </dependency>
 
 
         <!--TODO version 5-->
@@ -192,6 +203,29 @@
             <version>${spring-framework.data.version}</version>
         </dependency>
         <!--TODO version 5, ENDS-->
+
+        <!--TODO version 6-->
+        <!-- Logging -->
+
+
+        <!-- Logging with SLF4J & LogBack -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!--TODO version 6, ENDS-->
+
+        <!--TODO version 7-->
+
+        <!--TODO version 7, ENDS-->
 
     </dependencies>
     <!--http://startbootstrap.com/template-overviews/modern-business/  this is theme-->
