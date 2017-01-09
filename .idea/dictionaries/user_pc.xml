@@ -2,6 +2,7 @@
   <dictionary name="user-pc">
     <words>
       <w>dbschema</w>
+      <w>jstl</w>
     </words>
   </dictionary>
 </component>

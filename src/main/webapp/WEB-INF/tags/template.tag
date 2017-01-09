@@ -37,6 +37,7 @@
 <c:url value="/rest.html" var="rest" />
 <c:url value="/orm.html" var="orm" />
 <c:url value="/runtimeException.html" var="runtimeException" />
+<c:url value="/jstl.html" var="jstl" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -76,6 +77,9 @@
                         </li>
                         <li>
                             <a href="${runtimeException}">Runtime Exception</a>
+                        </li>
+                        <li>
+                            <a href="${jstl}">JSTL Example</a>
                         </li>
                     </ul>
                 </li>
