@@ -92,49 +92,49 @@
 
     <!--TODO Quartz configuration-->
 
-    <!-- Quartz simple trigger -->
-    <bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
-        <property name="jobDetail" ref="simpleQuartzJob" />
-        <property name="repeatInterval" value="3000" />
-        <property name="startDelay" value="1000" />
-    </bean>
-    <!-- Quartz cron trigger -->
-    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
-        <property name="jobDetail" ref="quartzCronJob"/>
-        <property name="cronExpression" value="0/7 * * * * ?" />
-        <!-- every 30 seconds (seconds, minutes, hours, day of month, month, day of week, year(optional)) -->
-    </bean>
+    <!--&lt;!&ndash; Quartz simple trigger &ndash;&gt;-->
+    <!--<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">-->
+        <!--<property name="jobDetail" ref="simpleQuartzJob" />-->
+        <!--<property name="repeatInterval" value="3000" />-->
+        <!--<property name="startDelay" value="1000" />-->
+    <!--</bean>-->
+    <!--&lt;!&ndash; Quartz cron trigger &ndash;&gt;-->
+    <!--<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">-->
+        <!--<property name="jobDetail" ref="quartzCronJob"/>-->
+        <!--<property name="cronExpression" value="0/7 * * * * ?" />-->
+        <!--&lt;!&ndash; every 30 seconds (seconds, minutes, hours, day of month, month, day of week, year(optional)) &ndash;&gt;-->
+    <!--</bean>-->
 
-    <!-- Quartz job -->
-    <bean id="simpleQuartzJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-        <property name="targetObject" ref="simpleQuartzTask" />
-        <property name="targetMethod" value="simpleTaskMethod" />
-    </bean>
-    <!-- Quartz cron job -->
-    <bean id="quartzCronJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-        <property name="targetObject" ref="cronQuartzTask" />
-        <property name="targetMethod" value="cronTaskMethod" />
-    </bean>
+    <!--&lt;!&ndash; Quartz job &ndash;&gt;-->
+    <!--<bean id="simpleQuartzJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--<property name="targetObject" ref="simpleQuartzTask" />-->
+        <!--<property name="targetMethod" value="simpleTaskMethod" />-->
+    <!--</bean>-->
+    <!--&lt;!&ndash; Quartz cron job &ndash;&gt;-->
+    <!--<bean id="quartzCronJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--<property name="targetObject" ref="cronQuartzTask" />-->
+        <!--<property name="targetMethod" value="cronTaskMethod" />-->
+    <!--</bean>-->
 
-    <!-- Quartz simple task -->
-    <bean id="simpleQuartzTask" class="com.borovyksv.SpringAngularJS.mvc.quarts.QuartzTask" />
+    <!--&lt;!&ndash; Quartz simple task &ndash;&gt;-->
+    <!--<bean id="simpleQuartzTask" class="com.borovyksv.SpringAngularJS.mvc.quarts.QuartzTask" />-->
 
-    <!-- Quartz cron task -->
-    <bean id="cronQuartzTask" class="com.borovyksv.SpringAngularJS.mvc.quarts.CronQuartzTask" />
+    <!--&lt;!&ndash; Quartz cron task &ndash;&gt;-->
+    <!--<bean id="cronQuartzTask" class="com.borovyksv.SpringAngularJS.mvc.quarts.CronQuartzTask" />-->
 
-    <!-- Quartz Scheduler -->
-    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
-        <property name="jobDetails">
-            <list>
-                <ref bean="simpleQuartzJob" />
-                <ref bean="quartzCronJob" />
-            </list>
-        </property>
-        <property name="triggers">
-            <list>
-                <ref bean="simpleTrigger" />
-                <ref bean="cronTrigger" />
-            </list>
-        </property>
-    </bean>
+    <!--&lt;!&ndash; Quartz Scheduler &ndash;&gt;-->
+    <!--<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">-->
+        <!--<property name="jobDetails">-->
+            <!--<list>-->
+                <!--<ref bean="simpleQuartzJob" />-->
+                <!--<ref bean="quartzCronJob" />-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="triggers">-->
+            <!--<list>-->
+                <!--<ref bean="simpleTrigger" />-->
+                <!--<ref bean="cronTrigger" />-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 </beans>

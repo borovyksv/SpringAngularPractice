@@ -5,11 +5,10 @@ package com.borovyksv.SpringAngularJS.mvc.scheduling;
  */
 
         import org.springframework.scheduling.annotation.Scheduled;
-        import org.springframework.stereotype.Component;
 
-        import java.util.Date;
+import java.util.Date;
 
-@Component
+//@Component
 public class ScheduleTask {
 
     @Scheduled(fixedDelay = 10000)
