@@ -4,6 +4,7 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:task="http://www.springframework.org/schema/task"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/mvc
@@ -11,7 +12,9 @@
 	   http://www.springframework.org/schema/context
 	   http://www.springframework.org/schema/context/spring-context.xsd
 	   http://www.springframework.org/schema/tx
-       http://www.springframework.org/schema/tx/spring-tx.xsd">
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd">
 
     <!-- context:component-scan This tag will scan @Component, @Repository, @Service, @Controller
          and also resolves @Autowired and @Qualifier -->
@@ -25,6 +28,9 @@
     <mvc:annotation-driven/>
 
     <tx:annotation-driven/>
+
+    <!-- Quartz scheduling configuration -->
+    <task:annotation-driven/>
 
     <!--org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found
     for HTTP request with URI [/jdbcUpdate/user/username/user@javastudy.ru/enabled/resources/css/bootstrap.css]

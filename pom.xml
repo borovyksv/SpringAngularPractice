@@ -33,10 +33,11 @@
         <!-- Hibernate / JPA -->
         <hibernate.version>5.0.1.Final</hibernate.version>
 
-
         <!-- Spring Data -->
         <spring-framework.data.version>1.9.1.RELEASE</spring-framework.data.version>
 
+        <!-- Quartz scheduling framework -->
+        <quartz.scheduling.version>2.2.1</quartz.scheduling.version>
 
     </properties>
 
@@ -224,7 +225,12 @@
         <!--TODO version 6, ENDS-->
 
         <!--TODO version 7-->
-
+        <!-- Quartz scheduling framework -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${quartz.scheduling.version}</version>
+        </dependency>
         <!--TODO version 7, ENDS-->
 
     </dependencies>
