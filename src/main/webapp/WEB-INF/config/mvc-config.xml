@@ -77,7 +77,8 @@
     <mvc:view-controller path="/jstl.html" view-name="/jstl/jstl"/>
     <mvc:view-controller path="/scope.html" view-name="/scope/scope"/>
     <mvc:view-controller path="/springSession.html" view-name="/scope/springSession"/>
-    <!--<mvc:view-controller path="/secondPage.html" view-name="/scope/secondPage"/>-->
+    <mvc:view-controller path="/secondPage.html" view-name="/scope/secondPage"/>
+    <mvc:view-controller path="/cookie.html" view-name="/cookie/cookieView"/>
 
 
 </beans>

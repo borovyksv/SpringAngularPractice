@@ -18,6 +18,7 @@ package com.borovyksv.SpringAngularJS.mvc.excelpdf;
 /**
  * Created for JavaStudy.ru on 23.02.2016.
  */
+@SuppressWarnings("all")
 public class ExcelDocument extends AbstractExcelView {
 
 
