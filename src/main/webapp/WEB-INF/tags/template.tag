@@ -21,7 +21,7 @@
     <link href="${fontawesome}" rel="stylesheet" />
 
     <!-- jQuery -->
-    <spring:url value="/resources/js/jquery.js" var="jqueryjs"/>
+    <spring:url value="/resources/js/jquery-2.1.4.min.js" var="jqueryjs"/>
     <script src="${jqueryjs}"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -39,6 +39,7 @@
 <c:url value="/runtimeException.html" var="runtimeException" />
 <c:url value="/jstl.html" var="jstl" />
 <c:url value="/redirectExample" var="redirectExample" />
+<c:url value="/scope.html" var="scope" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -84,6 +85,9 @@
                         </li>
                         <li>
                             <a href="${redirectExample}">Redirect Example</a>
+                        </li>
+                        <li>
+                            <a href="${scope}">Session Object Example</a>
                         </li>
                     </ul>
                 </li>

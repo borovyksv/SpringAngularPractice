@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="HSQLDB (Local) - jdbc:hsqldb:mem://localhost" uuid="3d6fda0d-436f-4e87-b610-5ab5218d641c">
+    <database-info product="HSQL Database Engine" version="2.3.2" jdbc-version="4.0" driver-name="HSQL Database Engine Driver" driver-version="2.3.2">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <schema name="PUBLIC" catalog="PUBLIC"/>
+    <table name="AUTHORITIES" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="USERNAME" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="AUTHORITY" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <foreign-key name="FK_AUTHORITIES_USER" columns="USERNAME" ref-table="USER" ref-schema="PUBLIC" ref-catalog="PUBLIC" ref-columns="USERNAME" update-rule="3" delete-rule="3"/>
+    </table>
+    <table name="LOG" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="IDLOG" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="LOGSTRING" sqlType="VARCHAR" precision="1000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="SYS_PK_10140" columns="IDLOG"/>
+    </table>
+    <table name="TEST" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="IDTEST" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="TESTCOLUMN" sqlType="VARCHAR" precision="1000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="SYS_PK_10146" columns="IDTEST"/>
+    </table>
+    <table name="USER" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="IDUSER" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="USERNAME" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PASSWORD" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ENABLED" sqlType="BOOLEAN" precision="0" scale="0" nullable="false" jdbcType="16"/>
+      <primary-key name="SYS_PK_10120" columns="USERNAME"/>
+    </table>
+  </data-source>
+</component>
