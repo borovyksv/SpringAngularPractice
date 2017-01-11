@@ -76,6 +76,8 @@
     <mvc:view-controller path="/orm.html" view-name="/orm/orm"/>
     <mvc:view-controller path="/jstl.html" view-name="/jstl/jstl"/>
     <mvc:view-controller path="/scope.html" view-name="/scope/scope"/>
+    <mvc:view-controller path="/springSession.html" view-name="/scope/springSession"/>
+    <!--<mvc:view-controller path="/secondPage.html" view-name="/scope/secondPage"/>-->
 
 
 </beans>

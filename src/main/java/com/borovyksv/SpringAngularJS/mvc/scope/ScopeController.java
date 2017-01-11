@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
  * Created for JavaStudy.ru on 03.03.2016.
  */
 @Controller
+
 public class ScopeController {
 
     @RequestMapping(value = "/scopeSession", method = RequestMethod.GET)

@@ -61,6 +61,18 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+
         <!-- Spring MVC -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -144,13 +156,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Logging with SLF4J & LogBack -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-            <scope>compile</scope>
-        </dependency>
         <!--TODO version 3, ENDS-->
 
         <!--TODO version 4-->

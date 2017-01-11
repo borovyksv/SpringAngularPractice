@@ -40,6 +40,7 @@
 <c:url value="/jstl.html" var="jstl" />
 <c:url value="/redirectExample" var="redirectExample" />
 <c:url value="/scope.html" var="scope" />
+<c:url value="/springSession.html" var="scope2" />
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -88,6 +89,9 @@
                         </li>
                         <li>
                             <a href="${scope}">Session Object Example</a>
+                        </li>
+                        <li>
+                            <a href="${scope2}">Session Object Example2</a>
                         </li>
                     </ul>
                 </li>
