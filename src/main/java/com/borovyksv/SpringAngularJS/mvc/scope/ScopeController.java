@@ -45,7 +45,12 @@ public class ScopeController {
     @RequestMapping(value = "/delete_session", method = RequestMethod.GET)
     public ModelAndView delete(@ModelAttribute("userJSP") SessionUser user, SessionStatus sessionStatus) {
         sessionStatus.setComplete();
-        return new ModelAndView("/scope/springSession");
+        return new ModelAndView("/scope/secondPage");
+    }
+
+    @RequestMapping(value = "/secondPage", method = RequestMethod.GET)
+    public ModelAndView second(@ModelAttribute("userJSP") SessionUser user) {
+        return new ModelAndView("/scope/secondPage");
     }
 
 

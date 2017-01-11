@@ -25,10 +25,8 @@
             </div>
             <!-- /.row -->
 
-            <c:url value="/scopeSession" var="scopeSession" />
-            <c:url value="/invalidateSession" var="invalidateSession" />
-            <c:url value="/scopeRequest" var="scopeRequest" />
-            <c:url value="/file.html" var="file" />
+            <c:url value="/delete_session" var="invalidateSession" />
+
             <!-- Content Row -->
             <div class="row">
 
@@ -37,6 +35,7 @@
                     <br/>
                     Введенный пароль: ${userJSP.password};
                 </div>
+                <p> <a href="${invalidateSession}">Invalidate Session</a> </p>
 
             </div>
             <!-- /.row -->
