@@ -51,12 +51,12 @@
         <property name="maxUploadSize" value="1000000"/>
     </bean>
     <!--Excel and PDF xml view configuration -->
-    <bean class="org.springframework.web.servlet.view.XmlViewResolver">
-        <property name="order" value="0" />
-        <property name="location">
-            <value>/WEB-INF/config/excel-pdf-config.xml</value>
-        </property>
-    </bean>
+    <!--<bean class="org.springframework.web.servlet.view.XmlViewResolver">-->
+        <!--<property name="order" value="0" />-->
+        <!--<property name="location">-->
+            <!--<value>/WEB-INF/config/excel-pdf-config.xml</value>-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <mvc:interceptors>
         <mvc:interceptor>
