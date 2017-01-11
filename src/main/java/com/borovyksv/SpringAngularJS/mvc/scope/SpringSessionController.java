@@ -25,7 +25,7 @@
 //    public ModelAndView main(@ModelAttribute("userJSP") SessionUser user) {
 //        ModelAndView modelAndView = new ModelAndView();
 //        modelAndView.addObject("userJSP", new SessionUser());
-//        modelAndView.setViewName("springSession");
+//        modelAndView.setViewName("/springSession");
 //        return modelAndView;
 //    }
 //

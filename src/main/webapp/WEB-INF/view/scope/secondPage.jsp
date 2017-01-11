@@ -33,23 +33,9 @@
             <div class="row">
 
                 <div class="col-lg-12">
-                    <p>Объект в сессии </p>
-                    <p><a href="${scopeSession}">Set object in session</a> </p>
-                    <p> <a href="${invalidateSession}">Invalidate Session</a> </p>
-                    <c:if test="${not empty sessionScope.sessionObject}">
-                        Объект в области видимости session:
-                        <b>${sessionScope.sessionObject}</b>
-                    </c:if>
-                    <br />
-
-                    <p>Объект в области видимости request</p>
-                    <a href="${scopeRequest}">Set object in request</a>
-                    <c:if test="${not empty requestScope.requestObject}">
-                        <p><b>Request attribute: </b> ${requestScope.requestObject} </p>
-
-                    </c:if>
-                    <br />
-                    <p><a href="${file}">Проверить на другой странице</a></p>
+                    Введенное имя: ${userJSP.name};
+                    <br/>
+                    Введенный пароль: ${userJSP.password};
                 </div>
 
             </div>
