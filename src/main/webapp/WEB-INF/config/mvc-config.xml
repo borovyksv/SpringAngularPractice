@@ -28,7 +28,14 @@
         HttpMessageConverter support for @RequestBody method parameters and @ResponseBody method return values
         from @RequestMapping or @ExceptionHandler methods.
      -->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+        <!--use int RestController to produce pretty json response-->
+        <mvc:message-converters>
+            <bean id="jacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="prettyPrint" value="true" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
     <tx:annotation-driven/>
 
@@ -58,12 +65,12 @@
         <property name="maxUploadSize" value="1000000"/>
     </bean>
     <!--Excel and PDF xml view configuration -->
-    <!--<bean class="org.springframework.web.servlet.view.XmlViewResolver">-->
-        <!--<property name="order" value="0" />-->
-        <!--<property name="location">-->
-            <!--<value>/WEB-INF/config/excel-pdf-config.xml</value>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <bean class="org.springframework.web.servlet.view.XmlViewResolver">
+        <property name="order" value="0" />
+        <property name="location">
+            <value>/WEB-INF/config/excel-pdf-config.xml</value>
+        </property>
+    </bean>
 
     <mvc:interceptors>
         <mvc:interceptor>

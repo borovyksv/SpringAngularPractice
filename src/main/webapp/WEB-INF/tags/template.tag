@@ -100,7 +100,7 @@
                             <a href="${email}">Работа с Java Mail API</a>
                         </li>
                         <li>
-                            <a href="${rest}">Rest Services</a>
+                            <a href="${rest}">Rest Services (JSON and XML)</a>
                         </li>
                         <li>
                             <a href="${orm}">Spring MVC и Hibernate 5</a>

@@ -10,6 +10,8 @@
         <c:url value="/rest/posts" var="getRestPosts" />
         <c:url value="/rest/posts/1" var="getPostsById" />
         <c:url value="/rest/delPosts/5" var="deletePostById"/>
+        <c:url value="/rest/getAllDBLogsXML" var="getAllDBLogsXML"/>
+        <c:url value="/rest/getAllDBLogsJSON" var="getAllDBLogsJSON"/>
         <!-- Page Content -->
         <div class="container">
 
@@ -39,8 +41,27 @@
                         <a href="${getRestPosts}" class="list-group-item">Get Rest Posts </a>
                         <a href="${getPostsById}" class="list-group-item">Get Rest Posts By Id </a>
                         <a href="${deletePostById}" class="list-group-item">Delete Post By Id </a>
+                        <a href="${getAllDBLogsJSON}" class="list-group-item">Get DBLogs (JSON)</a>
+                        <a href="${getAllDBLogsXML}" class="list-group-item">Get DBLogs (XML)</a>
                     </div>
                 </div>
+
+                <!-- Content Column -->
+                <div class="col-md-9">
+                    <c:if test="${not empty resultObject}">
+                        Result:
+                        <c:if test="${resultObject == 'true'}">
+                            <font color="green"><b>${resultObject}</b></font>
+                        </c:if>
+                        <c:if test="${resultObject == 'false'}">
+                            <font color="red"><b>${resultObject}</b></font>
+                        </c:if>
+                        <c:if test="${resultObject != 'true' and resultObject != 'false'}">
+                            <p>${resultObject}</p>
+                        </c:if>
+                    </c:if>
+                </div>
+                <a href="javascript:history.back()">Назад</a>
             </div>
             <!-- /.row -->
 
