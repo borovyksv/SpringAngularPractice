@@ -50,28 +50,26 @@
 
                     <c:if test="${not empty resultObjectList}">
                         <b>Result List:</b>
-                        <table >
-                            <th style="padding: 10px;">idUser</th>
-                            <th style=" text-align: center; ">username</th>
-                            <th style="padding: 10px;">password</th>
-                            <th style="padding: 10px;">enabled</th>
+                        <table>
                             <c:forEach var="userVar" items="#{resultObjectList}">
                                 <tr>
-                                    <td style=" text-align: center;"><c:out value="${userVar.idUser}"/></td>
-                                    <td ><c:out value="${userVar.username}"/></td>
-                                    <td style=" text-align: center;"><c:out value="${userVar.password}"/></td>
-                                    <td style=" text-align: center;">
-                                        <c:choose>
-                                            <c:when test="${userVar.enabled eq true}">
-                                                <i class="fa fa-check-square" aria-hidden="true"></i>
-                                            </c:when>
-                                            <c:otherwise>
-                                                <i class="fa fa-square" aria-hidden="true"></i>
-                                            </c:otherwise>
-                                        </c:choose>
-                                        <%--<c:out value="${userVar.enabled}"/>--%>
-                                    </td>
+                                    <td><b>idUser: </b></td>
+                                    <td><c:out value="${userVar.idUser}"/></td>
                                 </tr>
+                                <tr>
+                                    <td><b>username: </b></td>
+                                    <td><c:out value="${userVar.username}"/></td>
+                                </tr>
+                                <tr>
+                                    <td><b>password: </b></td>
+                                    <td><c:out value="${userVar.password}"/></td>
+                                </tr>
+                                <tr>
+                                    <td><b>enabled: </b></td>
+                                    <td><c:out value="${userVar.enabled}"/></td>
+                                </tr>
+                                <tr><td><b style="color:green">End user with id:${userVar.idUser}</b></td></tr>
+                                <tr><td> <br /></td></tr>
                             </c:forEach>
                         </table>
                     </c:if>

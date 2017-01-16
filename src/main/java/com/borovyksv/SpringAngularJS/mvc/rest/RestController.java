@@ -22,6 +22,9 @@ public class RestController {
     @Autowired
     private DBLogService dbLogService;
 
+
+
+
     @RequestMapping(value = "/rest/getAllDBLogsXML", method = RequestMethod.GET, produces = "application/xml")
     public @ResponseBody
     DBLogsXML getAllDBLogsXML() {

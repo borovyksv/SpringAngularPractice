@@ -54,12 +54,11 @@
                         <c:if test="${resultObject == 'false'}">
                             <font color="red"><b>${resultObject}</b></font>
                         </c:if>
-                        <c:if test="${resultObject !='true' and resultObject != 'false'}">
+                        <c:if test="${resultObject != 'true' and resultObject != 'false'}">
                             <p>${resultObject}</p>
                         </c:if>
                     </c:if>
                 </div>
-                </form>
             </div>
             <!-- /.row -->
 

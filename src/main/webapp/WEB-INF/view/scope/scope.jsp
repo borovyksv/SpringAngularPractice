@@ -28,6 +28,7 @@
             <c:url value="/scopeSession" var="scopeSession" />
             <c:url value="/invalidateSession" var="invalidateSession" />
             <c:url value="/scopeRequest" var="scopeRequest" />
+            <c:url value="/scopeRequest" var="scopeRequest" />
             <c:url value="/file.html" var="file" />
             <!-- Content Row -->
             <div class="row">
@@ -36,18 +37,12 @@
                     <p>Объект в сессии </p>
                     <p><a href="${scopeSession}">Set object in session</a> </p>
                     <p> <a href="${invalidateSession}">Invalidate Session</a> </p>
-                    <c:if test="${not empty sessionScope.sessionObject}">
-                        Объект в области видимости session:
-                        <b>${sessionScope.sessionObject}</b>
-                    </c:if>
+                    <p><b>SessionScope attribute:</b> ${sessionScope.sessionObject} </p>
                     <br />
 
                     <p>Объект в области видимости request</p>
                     <a href="${scopeRequest}">Set object in request</a>
-                    <c:if test="${not empty requestScope.requestObject}">
-                        <p><b>Request attribute: </b> ${requestScope.requestObject} </p>
-
-                    </c:if>
+                    <p><b>Request attribute: </b> ${requestScope.requestObject} </p>
                     <br />
                     <p><a href="${file}">Проверить на другой странице</a></p>
                 </div>

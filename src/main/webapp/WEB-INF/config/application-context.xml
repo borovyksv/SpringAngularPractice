@@ -66,7 +66,12 @@
     <bean id="entityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" >
         <!--packagesToScan - search Entity and mapping them -->
-        <property name="packagesToScan" value="com.borovyksv.SpringAngularJS.mvc.bean" />
+        <property name="packagesToScan">
+        <list>
+            <value>com.borovyksv.SpringAngularJS.mvc.bean</value>
+            <value>com.borovyksv.SpringAngularJS.mvc.rest.model</value>
+        </list>
+        </property>
         <property name="dataSource" ref="dataSource" />
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" >

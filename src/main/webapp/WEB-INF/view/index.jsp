@@ -56,7 +56,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h1 class="page-header">
-            Изучение Spring MVC + HTML5 + AngularJS + Bootstrap
+            <spring:message code="content.introMsg"/>
           </h1>
         </div>
         <div class="col-md-4">
@@ -101,6 +101,7 @@
       <c:url value="/email.html" var="email"/>
       <c:url value="/orm.html" var="orm" />
       <c:url value="/runtimeException.html" var="runtimeException" />
+      <c:url value="/security.html" var="security" />
       <!-- Portfolio Section -->
       <div class="row">
         <div class="col-lg-12">
@@ -132,7 +133,7 @@
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="portfolio-item.html">
+          <a href="${security}">
             <img class="img-responsive img-portfolio img-hover" src="${pageContext.request.contextPath}/resources/images/Srping_Security.png" alt="">
           </a>
         </div>
@@ -168,7 +169,7 @@
       <div class="well">
         <div class="row">
           <div class="col-md-8">
-            <p>Какая-то кнопочка с функционалом "нажми меня:)"</p>
+            <p>Демонстрация работы Interceptor в Spring MVC. Смотрите консоль в IDE</p>
           </div>
           <div class="col-md-4">
             <a class="btn btn-lg btn-default btn-block" href="/interceptorCall/subLevel">Вызов перехватчика</a>
