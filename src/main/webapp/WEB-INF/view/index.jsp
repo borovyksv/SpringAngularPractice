@@ -102,6 +102,7 @@
       <c:url value="/orm.html" var="orm" />
       <c:url value="/runtimeException.html" var="runtimeException" />
       <c:url value="/security.html" var="security" />
+      <c:url value="/angularIndex.html" var="angularIndex" />
       <!-- Portfolio Section -->
       <div class="row">
         <div class="col-lg-12">
@@ -123,7 +124,7 @@
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
-          <a href="portfolio-item.html">
+          <a href="${angularIndex}">
             <img class="img-responsive img-portfolio img-hover" src="${pageContext.request.contextPath}/resources/images/angularjs.jpg" alt="">
           </a>
         </div>
@@ -150,10 +151,10 @@
           <ul>
             <li><strong>Bootstrap v3.2.0</strong>
             </li>
-            <li>jQuery v1.11.0</li>
+            <li>jQuery v2.1.4</li>
             <li>Font Awesome v4.1.0</li>
             <li>Spring MVC 4</li>
-            <li>AngularJS</li>
+            <li>AngularJS 1.5</li>
           </ul>
           <p>Смотрите примеры в действии, а код и описание читайте на <a href="http://javastudy.ru">javastudy.ru</a></p>
         </div>
